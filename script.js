@@ -13,7 +13,7 @@ async function get_NASA(url) {
 	console.log(data.title);
 
 	let title = document.createElement('h1');
-	title.innerHTML = 'Astronomy Picture of the Day (APOD)';
+	title.innerHTML = 'Foto Astronómica del Dia';
 
 	let object = document.createElement('h2');
 	object.innerHTML = data.title;
@@ -36,9 +36,5 @@ async function get_img(url) {
 	console.log(data.hdurl);
 	img.width = 600;
 
-	let info = document.createElement('p');
-	info.innerHTML = data.explanation;
-
 	contenedor_img.appendChild(img);
-	contenedor_img.appendChild(info);
 }
