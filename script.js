@@ -34,7 +34,7 @@ async function get_img(url) {
 	let img = document.createElement('img');
 	img.src = data.url;
 	console.log(data.url);
-	img.width = 750;
+	img.width = 850;
 
 	img.addEventListener('click', function(){
 		window.open(data.hdurl);
