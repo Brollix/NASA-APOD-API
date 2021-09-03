@@ -32,9 +32,13 @@ async function get_img(url) {
 	const data = await response.json();
 
 	let img = document.createElement('img');
-	img.src = data.hdurl;
-	console.log(data.hdurl);
+	img.src = data.url;
+	console.log(data.url);
 	img.width = 750;
+
+	img.addEventListener('click', function(){
+		window.open(data.hdurl);
+	})
 
 	contenedor_img.appendChild(img);
 }

@@ -3,3 +3,11 @@ body {
 	color: white;
 	font-family: 'Roboto';
 }
+
+img{
+	transition: 250ms;
+}
+
+img:hover{
+	transform: scale(1.01);
+}
