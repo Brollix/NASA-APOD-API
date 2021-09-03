@@ -34,7 +34,7 @@ async function get_img(url) {
 	let img = document.createElement('img');
 	img.src = data.hdurl;
 	console.log(data.hdurl);
-	img.width = 600;
+	img.width = 750;
 
 	contenedor_img.appendChild(img);
 }
